@@ -1,0 +1,15 @@
+.nav {
+    text-transform: uppercase;
+    color: black;
+    margin-right: 1em;
+    &__menu{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    &__menu--itmes{
+        margin: 0 10px;
+    color: black;
+    }
+
+}

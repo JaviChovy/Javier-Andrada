@@ -1,0 +1,24 @@
+.header {
+    background-color: white;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .img__header {
+    height: 80px;
+    margin-left: 1em;
+    border-radius: 8px;
+    }
+}
+
+.sub__header {
+    background-color: black;
+    height: 3em;    
+    display: grid;
+    place-items: center;
+    
+    h1 {
+        color: white !important;
+    }
+}
