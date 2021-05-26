@@ -1,7 +1,9 @@
 .header {
     background-color: white;
     height: 80px;
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     
     .img__header {
     height: 80px;
