@@ -74,16 +74,15 @@
 }
 
 .galeria {
-  background-color: #0f13e0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  background-image: url(/multimedia/suelda.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  color: white !important;
+  height: 600px;
+  width: 100% !important;
 }
 
 .galeria__item img {
@@ -131,6 +130,9 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: lightgrey;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero__info {
@@ -140,7 +142,7 @@ html {
 
 .hero__info h2 {
   font-size: 20px;
-  color: #6614b3;
+  color: #3e1663;
   text-transform: uppercase;
   margin-bottom: 1em;
 }
@@ -150,21 +152,29 @@ html {
   font-size: 18px;
 }
 
+.texto {
+  background-color: lightgray;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
 @media only screen and (min-width: 360px) {
   html {
-    background-color: brown;
+    background-color: white;
   }
 }
 
 @media only screen and (min-width: 768px) {
   html {
-    background-color: blue;
+    background-color: white;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   html {
-    background-color: aqua;
+    background-color: white;
   }
 }
 /*# sourceMappingURL=styles.css.map */

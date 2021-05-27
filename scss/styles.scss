@@ -1,6 +1,5 @@
 // Import
-@import "footer", "header", "nav", "galeria";
-
+@import "footer", "header", "nav", "galeria"; 
 html{
     font-family: 'Roboto', sans-serif;
 }
@@ -17,6 +16,9 @@ html{
 .hero__inicio {
     display: flex;
     align-items: center;
+    background-color: lightgrey;
+    background-size: cover;
+    background-position: center;
 }
 
 .hero__info {
@@ -26,7 +28,7 @@ html{
 
 .hero__info h2 {
     font-size: 20px;
-    color: rgb(102, 20, 179);
+    color: rgb(62, 22, 99);
     text-transform: uppercase;
     margin-bottom: 1em;
 }
@@ -37,16 +39,24 @@ html{
     
 }
 
+.texto{
+    background-color: lightgray ;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+
 @media only screen and (min-width: 360px) {
     html{
-        background-color: brown;
+        background-color: white;
     }
 }
 
 @media only screen and (min-width: 768px) {
-    html{background-color: blue;}
+    html{background-color: white;}
 }
 
 @media only screen and (min-width: 1024px) {
-    html{background-color: aqua;}
+    html{background-color: white;}
 }

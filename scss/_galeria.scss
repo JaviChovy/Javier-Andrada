@@ -1,8 +1,12 @@
 .galeria{
-    background-color: rgb(15, 19, 224);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-image: url(/multimedia/suelda.jpg ) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: grid;
+    place-items: center;
+    color: white !important;
+    height: 600px;
+    width: 100% !important;
     &__item img{
         width: 300px;
         height: 300px;
@@ -10,6 +14,7 @@
     &__itme img:hover{
         width: 400px;
         height: 400px;
+    
     }
 }
 .contenedor__galeria {
@@ -20,4 +25,5 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     justify-items: center;
+    
 }
