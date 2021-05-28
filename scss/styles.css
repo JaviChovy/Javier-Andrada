@@ -62,15 +62,13 @@
 }
 
 .galeria {
-  background-image: url(https://www.aeeproveedores.com/wp-content/uploads/proteccion-da-mascara-facial-a-soldadores.jpg);
+  background-color: red;
   background-position: center;
   background-repeat: no-repeat;
   display: -ms-grid;
   display: grid;
   place-items: center;
   color: white !important;
-  height: 200px;
-  width: 100% !important;
 }
 
 .galeria__item img {
