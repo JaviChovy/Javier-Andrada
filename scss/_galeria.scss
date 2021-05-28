@@ -1,17 +1,18 @@
 .galeria{
-    background-image: url(/multimedia/suelda.jpg ) ;
+    background-image: url(/multimedia/suelda.jpg );
     background-position: center;
     background-repeat: no-repeat;
     display: grid;
     place-items: center;
     color: white !important;
-    height: 600px;
+    height: 200px;
     width: 100% !important;
+
     &__item img{
         width: 300px;
         height: 300px;
     }
-    &__itme img:hover{
+    &__item img:hover{
         width: 400px;
         height: 400px;
     

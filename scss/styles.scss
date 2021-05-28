@@ -1,5 +1,7 @@
 // Import
 @import "footer", "header", "nav", "galeria"; 
+
+
 html{
     font-family: 'Roboto', sans-serif;
 }
@@ -40,7 +42,7 @@ html{
 }
 
 .texto{
-    background-color: lightgray ;
+    background-color: lightgrey ;
     justify-content: center;
     text-align: center;
     
@@ -50,6 +52,9 @@ html{
 @media only screen and (min-width: 360px) {
     html{
         background-color: white;
+    }
+    .sub__header {
+        height: 100px;
     }
 }
 
