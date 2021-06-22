@@ -1,14 +1,15 @@
 .footer {
-    background-color: darkgray;
+    background-color: black;
     color: beige;
-    
-}.footer {
     width: 100%;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    color: white !important;
+
     h3{
         font-size: 2em;
         margin: 1em 0;
+        color: white;
     }
 }

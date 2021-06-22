@@ -1,10 +1,5 @@
 // Import
-@import "footer", "header", "nav", "galeria"; 
-
-
-html{
-    font-family: 'Roboto', sans-serif;
-}
+@import "footer", "header", "nav", "galeria";
 
 * {
     margin: 0;
@@ -15,12 +10,17 @@ html{
     text-decoration: none;
 }
 
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
 .hero__inicio {
     display: flex;
     align-items: center;
     background-color: lightgrey;
     background-size: cover;
     background-position: center;
+    color: rgb(14, 116, 211) !important;
 }
 
 .hero__info {
@@ -38,30 +38,95 @@ html{
 .hero__info p {
     color: gray;
     font-size: 18px;
-    
 }
 
-.texto{
-    background-color: lightgrey ;
+.texto {
+    background-color: lightgrey;
     justify-content: center;
-    text-align: center;
-    
+    margin: auto;
+    border: solid 1px black;
+}
+.form__contacto {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+
+    label {
+        padding: 1em 0;
+    }
+    input {
+        padding: 0.5em;
+    }
+
+    textarea {
+        resize: none;
+        padding: 0.5em;
+    }
 }
 
 
 @media only screen and (min-width: 360px) {
-    html{
+    html {
         background-color: white;
     }
+
     .sub__header {
         height: 100px;
+        text-align: center;
+    }
+
+    .contenedor__galeria,
+    .hero__inicio {
+        display: block;
+    }
+
+    .footer {
+        display: block;
+
+        &__contacto,
+        &__map {
+            padding: 1em;
+        }
     }
 }
 
 @media only screen and (min-width: 768px) {
-    html{background-color: white;}
+    html {
+        background-color: white;
+    }
+
+    .contenedor__galeria,
+    .hero__inicio {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .galeria__item {
+            padding: 1em;
+    }
+    .footer {
+        display: flex;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
-    html{background-color: white;}
+    html {
+        background-color: white;
+    }
+
+    .hero__inicio {
+        flex-wrap: nowrap;
+    }
+
+    .contenedor__galeria {
+        display: grid;
+        place-items: center;
+        margin: 2em 0;
+        padding: 1em;
+        row-gap: 2em;
+        column-gap: 2em;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
 }

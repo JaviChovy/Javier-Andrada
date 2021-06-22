@@ -2,31 +2,29 @@
     background: url("https://images.unsplash.com/photo-1511651432281-5cf2a44004f4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1190&q=80");
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     display: grid;
     place-items: center;
-    color: white !important;
+    color: rgb(255, 255, 255) !important;
     max-width: 100%;
     height: 200px;
+    background-color: lightgray;
+    
 
     &__item img {
-        width: 300px;
-        height: 300px;
+        width: 350px;
+        height: 350px;
+        
     }
 
     &__item img:hover {
         width: 400px;
-        height: 400px;
-
+        height: 400px; 
+        transition: 1s;
+        filter: sepia(1);      
     }
 }
 
-.contenedor__galeria {
-    display: grid;
-    margin: 2%;
-    row-gap: 2em;
-    column-gap: 2em;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    justify-items: center;
-
+.btn btn-primary{
+    align-items: flex-end;    
 }
